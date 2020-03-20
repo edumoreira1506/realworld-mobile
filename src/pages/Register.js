@@ -9,7 +9,11 @@ const Register = ({
     <Text>Register!</Text>
     <Button
       title="Back to home!"
-      onPress={() => navigation.navigate(routes.HOME)}
+      onPress={() => navigation.goBack()}
+    />
+    <Button
+      title="Back to home with params!"
+      onPress={() => navigation.navigate(routes.HOME, { originPage: routes.REGISTER })}
     />
   </View>
 );
