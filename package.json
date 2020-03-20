@@ -8,6 +8,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@react-navigation/native": "^5.1.1",
     "dot-env": "^0.0.1",
     "expo": "~36.0.0",
     "react": "~16.9.0",
