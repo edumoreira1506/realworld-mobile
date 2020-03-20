@@ -1,9 +1,16 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Button } from 'react-native';
+import { routes } from '../config/constants';
 
-const Login = () => (
+const Login = ({
+  navigation
+}) => (
   <View>
     <Text>Login!</Text>
+    <Button
+      title="Back to home!"
+      onPress={() => navigation.navigate(routes.HOME)}
+    />
   </View>
 );
 
